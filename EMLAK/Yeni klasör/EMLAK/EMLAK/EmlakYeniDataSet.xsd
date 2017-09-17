@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EmlakYeniDataSet" targetNamespace="http://tempuri.org/EmlakYeniDataSet.xsd" xmlns:mstns="http://tempuri.org/EmlakYeniDataSet.xsd" xmlns="http://tempuri.org/EmlakYeniDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="EmlakYeniConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="EmlakYeniConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.EMLAK.Properties.Settings.GlobalReference.Default.EmlakYeniConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="IsyeriTableAdapter" GeneratorDataComponentClassName="IsyeriTableAdapter" Name="Isyeri" UserDataComponentName="IsyeriTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EmlakYeniConnectionString (Settings)" DbObjectName="EmlakYeni.dbo.Isyeri" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Fiyat, EmlakSahibi, Metrekare, Il, Adres, EklenmeTarihi, IslemTuru FROM dbo.Isyeri</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Fiyat" DataSetColumn="Fiyat" />
+              <Mapping SourceColumn="EmlakSahibi" DataSetColumn="EmlakSahibi" />
+              <Mapping SourceColumn="Metrekare" DataSetColumn="Metrekare" />
+              <Mapping SourceColumn="Il" DataSetColumn="Il" />
+              <Mapping SourceColumn="Adres" DataSetColumn="Adres" />
+              <Mapping SourceColumn="EklenmeTarihi" DataSetColumn="EklenmeTarihi" />
+              <Mapping SourceColumn="IslemTuru" DataSetColumn="IslemTuru" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EmlakYeniDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="EmlakYeniDataSet" msprop:Generator_UserDSName="EmlakYeniDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Isyeri" msprop:Generator_TableClassName="IsyeriDataTable" msprop:Generator_TableVarName="tableIsyeri" msprop:Generator_TablePropName="Isyeri" msprop:Generator_RowDeletingName="IsyeriRowDeleting" msprop:Generator_RowChangingName="IsyeriRowChanging" msprop:Generator_RowEvHandlerName="IsyeriRowChangeEventHandler" msprop:Generator_RowDeletedName="IsyeriRowDeleted" msprop:Generator_UserTableName="Isyeri" msprop:Generator_RowChangedName="IsyeriRowChanged" msprop:Generator_RowEvArgName="IsyeriRowChangeEvent" msprop:Generator_RowClassName="IsyeriRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Fiyat" msprop:Generator_ColumnVarNameInTable="columnFiyat" msprop:Generator_ColumnPropNameInRow="Fiyat" msprop:Generator_ColumnPropNameInTable="FiyatColumn" msprop:Generator_UserColumnName="Fiyat" type="xs:decimal" />
+              <xs:element name="EmlakSahibi" msprop:Generator_ColumnVarNameInTable="columnEmlakSahibi" msprop:Generator_ColumnPropNameInRow="EmlakSahibi" msprop:Generator_ColumnPropNameInTable="EmlakSahibiColumn" msprop:Generator_UserColumnName="EmlakSahibi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Metrekare" msprop:Generator_ColumnVarNameInTable="columnMetrekare" msprop:Generator_ColumnPropNameInRow="Metrekare" msprop:Generator_ColumnPropNameInTable="MetrekareColumn" msprop:Generator_UserColumnName="Metrekare" type="xs:int" />
+              <xs:element name="Il" msprop:Generator_ColumnVarNameInTable="columnIl" msprop:Generator_ColumnPropNameInRow="Il" msprop:Generator_ColumnPropNameInTable="IlColumn" msprop:Generator_UserColumnName="Il">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Adres" msprop:Generator_ColumnVarNameInTable="columnAdres" msprop:Generator_ColumnPropNameInRow="Adres" msprop:Generator_ColumnPropNameInTable="AdresColumn" msprop:Generator_UserColumnName="Adres">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EklenmeTarihi" msprop:Generator_ColumnVarNameInTable="columnEklenmeTarihi" msprop:Generator_ColumnPropNameInRow="EklenmeTarihi" msprop:Generator_ColumnPropNameInTable="EklenmeTarihiColumn" msprop:Generator_UserColumnName="EklenmeTarihi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IslemTuru" msprop:Generator_ColumnVarNameInTable="columnIslemTuru" msprop:Generator_ColumnPropNameInRow="IslemTuru" msprop:Generator_ColumnPropNameInTable="IslemTuruColumn" msprop:Generator_UserColumnName="IslemTuru">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
